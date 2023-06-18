@@ -1,97 +1,69 @@
-![](_assets/images/documentation/chalk-intro@2x.png)
+<p align="center">
+    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="https://sergiokopplin.github.io/indigo/">Demo</a></h2>
+</p>
 
-Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
+<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
 
-## Overview
+***
 
-Features:
-  - About page.
-  - Automatic RSS feed.
-  - Automatic sitemap.
-  - Automatic time to read post indicator.
-  - Cross browser support (supports all modern browsers).
-  - Custom 404 page.
-  - Custom code highlighting.
-  - Customizable pagination.
-  - Dark and Light theme.
-  - Easy setup and deploying.
-  - Enlarge images on click.
-  - Filter on tags.
-  - Optional tag navigation.
-  - Frequently updated with new versions.
-  - Many social media links supported.
-  - Media embed for videos.
-  - PageSpeed optimized.
-  - Proper sharing links for posts on Facebook, Twitter and Google Plus.
-  - SEO optimized.
-  - Support for local fonts.
-  - Support for emoji's.
+<p align="center">
+    <b><a href="README.md#what-has-inside">What has inside</a></b>
+    |
+    <b><a href="README.md#setup">Setup</a></b>
+    |
+    <b><a href="README.md#settings">Settings</a></b>
+    |
+    <b><a href="README.md#how-to">How to</a></b>
+</p>
 
-Integrations
-  - [Disqus](https://disqus.com/)
-  - [Google Analytics](https://analytics.google.com/analytics/web/)
-  - [Google Fonts](https://fonts.google.com/)
-  - [SVG Icons](https://icomoon.io/)
+<p align="center">
+    Light and Dark themes.
+</p>
 
-Used tools
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - [Circle CI](https://circleci.com/)
-  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
-  - [Jekyll](https://jekyllrb.com/)
-  - [Jekyll Assets](https://github.com/jekyll/jekyll-assets)
-  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
-  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
-  - [Kickster](https://kickster.nielsenramon.com/)
-  - [Retina.js](https://imulus.github.io/retinajs/)
-  - [STACSS](https://stacss.nielsenramon.com/)
-  - [Travis](https://travis-ci.org/)
-  - [Yarn](https://yarnpkg.com)
-  - [Zooming](https://github.com/kingdido999/zooming/)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
+</p>
 
-## Usage
+## What has inside
 
-### Installation
+- [Jekyll](https://jekyllrb.com/), [Sass](https://sass-lang.com/) ~[RSCSS](https://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/);
+- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
+- No JS. :sunglasses:
 
-If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](https://brew.sh/) installed):
+## Setup
 
-    brew install ruby
-    brew install npm
+0. :star: to the project. :metal:
+1. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
+2. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
+3. Write some posts :bowtie:
 
-On windows, install Ruby and Node with the installers found here:
+If you want to test locally on your machine, do the following steps also:
 
-  - [Ruby](https://rubyinstaller.org/)
-  - [Node.js](https://nodejs.org/en/download/)
+1. Install [Jekyll](https://jekyllrb.com) and [Bundler](https://bundler.io/).
+2. Clone the forked repo on your machine
+3. Enter the cloned folder via terminal and run `bundle install`
+4. Then run `bundle exec jekyll serve`
+5. Open it in your browser: `http://localhost:4000`
+6. Do you want an admin panel to edit your posts? You can install this plugin [jekyll-admin](https://jekyll.github.io/jekyll-admin/).
 
-Next setup your environment:
+## Settings
 
-    npm run setup
+You must fill some informations on `_config.yml` to customize your site.
 
-### Development
+```
+name: John Doe
+bio: 'A Man who travels the world eating noodles'
+picture: 'assets/images/profile.jpg'
+...
 
-Run Jekyll:
+and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
+```
 
-    npm run local
+## How To?
 
-## Deploy to GitHub Pages
+Check the [FAQ](./FAQ.md) if you have any doubt or problem.
 
-Before you deploy, commit your changes to any working branch except the `gh-pages` one and run the following command:
-
-    npm run publish
-
-**Important note**: Chalk does not support the standard way of Jekyll hosting on GitHub Pages. You need to deploy your working branch (can be any branch, for xxx.github.io users: use another branch than `master`) with the `npm run publish` command. Reason for this is because Chalk uses Jekyll plugins that aren't supported by GitHub pages. The `npm run publish` command will automatically build the entire project, then push it to the `gh-pages` branch of your repo. The script creates that branch for you so no need to create it yourself. Also, if you are developing a **project site**, you must set the `baseurl` in `_config.yml` to the name of your repository.
-
-You can find more info on how to use the `gh-pages` branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
-
-[View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
-
+---
 ## License
 
-MIT License
-
-## Contributing
-
-1. Fork it (https://github.com/[my-github-username]/chalk/fork)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+[MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin

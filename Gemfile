@@ -1,14 +1,13 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "autoprefixer-rails"
-gem "html-proofer"
-gem "image_optim"
-gem "jekyll", '3.8.6'
-gem "jekyll-assets"
-gem "jekyll-paginate"
-gem "jekyll-sitemap"
-gem "jemoji"
-gem "mini_magick"
-gem "sass"
-gem "sprockets", "~> 3.7"
-gem "uglifier"
+group :jekyll_plugins do
+    gem 'github-pages'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-gist'
+    gem 'jekyll-feed'
+    gem 'jemoji'
+    gem "jekyll-paginate-v2", "~> 2.0"
+    gem "html-proofer"
+end
+
+gem "webrick", "~> 1.7"
