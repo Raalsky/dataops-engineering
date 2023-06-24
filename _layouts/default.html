@@ -5,8 +5,8 @@ layout: compress
 <html lang="en">
 <head>
 
-    {% if site.analytics-google %}
-        {% include analytics-google.html %}
+    {% if site.tagmanager %}
+        {% include google-tag-manager-head.html %}
     {% endif %}
 
     <meta charset="utf-8">
@@ -42,6 +42,10 @@ layout: compress
 
 </head>
 <body>
+    {% if site.tagmanager %}
+        {% include google-tag-manager-body.html %}
+    {% endif %}
+
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.layout == "post" %}
             <div class="post">
