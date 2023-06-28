@@ -1,2 +1,25 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.tagmanager }}"></script>
+<!-- Google Data Layer -->
+<script>
+window.dataLayer = window.dataLayer || [];
+</script>
+<!-- End Google Data Layer -->
+<!-- Google Tag Manager -->
+<script>
+(
+    function () {
+        window['dataLayer'] = window['dataLayer'] || [];
+        window['dataLayer'].push(
+            {
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            }
+        );
+        const firstScriptOnWebPage = document.getElementsByTagName('script')[0];
+        const gtmScript = document.createElement('script');
+        gtmScript.async = true;
+        gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id={{ site.tagmanager }}';
+        firstScriptOnWebPage.parentNode.insertBefore(gtmScript, firstScriptOnWebPage);
+    }
+)();
+</script>
+<!-- End Google Tag Manager -->
