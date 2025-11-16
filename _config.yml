@@ -24,7 +24,7 @@ url: https://dataops.engineering
 
 permalink: /:title/
 
-tagmanager: 'GTM-NV4H7LC'
+#tagmanager: 'GTM-NV4H7LC'
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
