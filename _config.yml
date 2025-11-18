@@ -106,11 +106,4 @@ exclude:
     "FAQ.md",
     "vendor",
     "Rakefile",
-
-    # TODO: Restore later
-    "tags.html",
-    "projects.html",
-    "blog.html",
-    "_posts/2015-02-24-markdown-extra-components.markdown",
-    "about.md",
   ]
