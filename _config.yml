@@ -2,7 +2,6 @@
 title: DataOps Engineering
 bio: Just another random developer
 
-# twitter summary info
 description: A blog about technology and stuff related
 
 # if it's an external image, update below for true
@@ -12,7 +11,7 @@ picture: assets/images/profile.jpg
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
-dark-theme: auto
+dark-theme: true
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
